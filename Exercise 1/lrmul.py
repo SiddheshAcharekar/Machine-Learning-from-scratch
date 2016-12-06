@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 #Load data #=====================================================================================================#
 data='ex1data2.txt'
 #Read file contents
-cols=np.loadtxt(data, delimiter=',', usecols=(0,1,2), unpack=True)
-X= np.transpose(np.array(cols[:-1]))
-y= np.transpose(np.array(cols[-1:]))
+alldata = np.loadtxt(data, delimiter=',', usecols=(0,1,2), unpack=True)
+X= np.transpose(np.array(alldata[:-1]))
+y= np.transpose(np.array(alldata[-1:]))
 m= y.size
 
 X= np.insert(X,0,1, axis=1)

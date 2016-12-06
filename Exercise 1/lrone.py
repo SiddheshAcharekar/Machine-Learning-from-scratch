@@ -2,11 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 datafile= 'ex1data1.txt'
-cols= np.loadtxt(datafile, delimiter=',', usecols=(0,1), unpack=True)  #read all data seperated by commas and arranged in columns
+alldata = np.loadtxt(datafile, delimiter=',', usecols=(0,1), unpack=True)  #read all data seperated by commas and arranged in columns
 #Form X and y matrix vectors
 
-X= np.transpose(np.array(cols[:-1]))
-y= np.transpose(np.array(cols[-1:]))
+X= np.transpose(np.array(alldata[:-1]))
+y= np.transpose(np.array(alldata[-1:]))
 m= y.size
 
 X= np.insert(X,0,1,axis=1)
