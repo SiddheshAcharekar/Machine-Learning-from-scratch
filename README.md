@@ -18,8 +18,7 @@ Unsupervised Machine Learning Algorithms:
 6) Neural Networks in Tensorflow
 7) Autoencoders using Tensorflow
 8) Word Vector Embedddings using Tensorflow
-9)  KL Summarization
-10) LDA Summarization
+9)  KL and LDA Summarization
 11) Sampling methods (Gaussian, Uniform, Stevens(without replacement))
 12) Conditional Sampling (Gibbs)
 13) Collaborative Filtering for Recommendation Systems
